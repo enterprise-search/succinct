@@ -1,7 +1,7 @@
 #define BOOST_TEST_MODULE mapper
 #include "test_common.hpp"
 
-#include <boost/filesystem.hpp>
+#include <filesystem>
 
 #include "mapper.hpp"
 
@@ -27,7 +27,7 @@ BOOST_AUTO_TEST_CASE(basic_map)
         BOOST_REQUIRE(std::equal(vec.begin(), vec.end(), mapped_vec.begin()));
     }
 
-    boost::filesystem::remove("temp.bin");
+    std::filesystem::remove("temp.bin");
 }
 
 class complex_struct {
@@ -73,5 +73,5 @@ BOOST_AUTO_TEST_CASE(complex_struct_map)
         BOOST_REQUIRE_EQUAL(s.m_b.size(), mapped_s.m_b.size());
     }
 
-    boost::filesystem::remove("temp.bin");
+    std::filesystem::remove("temp.bin");
 }

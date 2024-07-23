@@ -7,9 +7,7 @@ namespace succinct {
 
     class elias_fano {
     public:
-        elias_fano()
-            : m_size(0)
-        {}
+        elias_fano() = default;
 
         struct elias_fano_builder {
             elias_fano_builder(uint64_t n, uint64_t m)

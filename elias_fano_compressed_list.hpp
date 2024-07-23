@@ -6,9 +6,9 @@ namespace succinct {
 
     struct elias_fano_compressed_list
     {
-        typedef uint64_t value_type;
+        using value_type = uint64_t;
 
-        elias_fano_compressed_list() {}
+        elias_fano_compressed_list() = default;
 
         template <typename Range>
         elias_fano_compressed_list(Range const& ints)

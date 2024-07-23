@@ -71,7 +71,7 @@ BOOST_AUTO_TEST_CASE(topk_vector)
     srand(42);
 
     //typedef succinct::topk_vector<succinct::mapper::mappable_vector<uint64_t> > topk_type;
-    typedef succinct::topk_vector<succinct::elias_fano_compressed_list> topk_type;
+    using topk_type = succinct::topk_vector<succinct::elias_fano_compressed_list>;
 
     {
         std::vector<value_type> v;

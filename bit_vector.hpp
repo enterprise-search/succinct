@@ -188,9 +188,7 @@ namespace succinct {
 
     class bit_vector {
     public:
-        bit_vector()
-            : m_size(0)
-        {}
+        bit_vector() = default;
 
         template <class Range>
         bit_vector(Range const& from) {

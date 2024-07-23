@@ -18,6 +18,7 @@ test_topk_vector
 # cmake
 Makefile
 CMakeCache.txt
+CMakeLists.txt.user
 *.cmake
 Testing/
 CMakeFiles/
